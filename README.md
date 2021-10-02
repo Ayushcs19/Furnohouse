@@ -1,7 +1,7 @@
 # Furnohouse
 
 This repository is FullStack project based on furniture selling e-commerce website named 'Furnohouse'.
-Team Members:
+Team Members (Students of GLA University):
 
 1. Ayush Gupta
 2. Ayush Jaiswal
