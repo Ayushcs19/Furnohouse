@@ -7,3 +7,5 @@ Team Members (Students of GLA University):
 2. Ayush Jaiswal
 3. Vaibhav Pandey
 4. Yash Mangla
+
+This project is been developed on FrontEnd aspects.
