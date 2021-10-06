@@ -40,18 +40,18 @@
         gap: 0.5rem;
         justify-content: center;
         align-items: center;
-        color: brown;
       }
       .logo {
-        width: 80px;
-        height: 80px;
+        width: 5rem;
+        height: 5rem;
       }
       .logoName {
-        font-size: 36px;
-        text-shadow: 2px 2px 0px orange;
+        color: brown;
+        font-size: 3rem;
+        text-shadow: 0.2rem 0.1rem 0rem orange;
       }
       .logoName:hover {
-        text-shadow: 2px 2px 8px orange;
+        text-shadow: 0.2rem 0.2rem 0.3rem orange;
       }
       .searchArea {
         position: relative;
@@ -98,6 +98,14 @@
       .layer2Icon:hover {
         stroke: orange;
       }
+      .account {
+        position: relative;
+      }
+      .account:hover .headerMenu {
+        opacity: 100%;
+        z-index: 1;
+        transform: translateY(-2rem);
+      }
       .layer3 {
         position: relative;
         display: flex;
@@ -128,20 +136,32 @@
       }
       .headerMenu {
         position: absolute;
+        display: flex;
+        flex-direction: column;
         top: 4rem;
         opacity: 0;
-        width: 200px;
-        height: 200px;
+        width: 10rem;
         background-color: ghostwhite;
         transition: all 0.5s;
-        z-index: 1;
+        z-index: 0;
         border-style: solid;
         border-color: lightgray;
         border-width: 0px 1px 1px 1px;
       }
       .layer3Header:hover .headerMenu {
         opacity: 100%;
+        z-index: 1;
         transform: translateY(-2rem);
+      }
+      .headerMenuOption {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        transition: 0.2s;
+      }
+      .headerMenuOption:hover {
+        background-color: lightgray;
       }
       .content {
         width: 90%;
@@ -160,7 +180,7 @@
         outline: none;
         border: none;
         opacity: 50%;
-        background-color: black;
+        background-color: brown;
         color: white;
         cursor: pointer;
       }
@@ -169,6 +189,179 @@
       }
       .slideshowNav:active {
         transform: scale(0.9);
+      }
+      .reviewSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 0rem 4em 0rem;
+      }
+      .reviewHeaderSection {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+      }
+      .reviewHeader {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: normal;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 0.1rem solid orange;
+      }
+      .reviewNav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .reviewNav:hover {
+        transition: 0.5s;
+        color: brown;
+        text-shadow: 0.1rem 0.1rem 0.3rem orange;
+      }
+      .reviewContent {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+      .customerInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        width: 50%;
+        padding: 1rem;
+      }
+      .customerAvatar {
+        width: 8rem;
+        height: 8rem;
+      }
+      .customerName {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: normal;
+      }
+      .reviewDivider {
+        width: 0.2rem;
+        height: 8rem;
+        background-color: lightsalmon;
+      }
+      .review {
+        width: 50%;
+        padding: 1rem;
+        margin-left: 4rem;
+        font-style: oblique;
+      }
+      .reviewText {
+        width: 75%;
+        text-align: justify;
+      }
+      .bestsellersSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 0rem 4em 0rem;
+        gap: 2rem;
+        width: 100%;
+      }
+      .bestsellersHeader {
+        font-family: "Times New Roman", Times, serif;
+        font-weight: normal;
+        font-size: 2rem;
+        border-bottom: 0.1rem solid orange;
+      }
+      .bestsellersItems {
+        display: grid;
+        width: 80%;
+        grid-template-columns: 25% 25% 25% 25%;
+      }
+      .bestsellersItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.2rem;
+        margin: 0.5rem;
+        padding: 0.2rem;
+        background-color: ghostwhite;
+        box-shadow: 0.1rem 0.1rem 1rem lightgray;
+        cursor: pointer;
+      }
+      .bestsellerImageDiv {
+        width: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .bestsellerImage {
+        width: 100%;
+        transition: 0.5s;
+      }
+      .bestsellerImage:hover {
+        transform: scale(120%);
+      }
+      .bestsellerInfo {
+        display: flex;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .bestsellerProductName {
+        font-weight: 500;
+      }
+      .bestsellerPrice {
+        font-style: oblique;
+        font-weight: normal;
+        color: gray;
+      }
+      .footer {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        padding: 0rem 0rem 3rem 0rem;
+        border: 0.01px solid lightgray;
+        background-color: ghostwhite;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+      .siteLinksSection {
+        display: flex;
+        width: 60%;
+        margin: 1.5rem 0rem 0rem 1rem;
+        flex-direction: column;
+        justify-content: left;
+      }
+      .siteLink {
+        display: block;
+        width: fit-content;
+        text-decoration: none;
+        color: orange;
+        margin: 0.5rem;
+      }
+      .siteLink:hover {
+        color: brown;
+      }
+      .socialMediaSection {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        gap: 1rem;
+        width: 20%;
+      }
+      .socialMediaLinks {
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        opacity: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.2s;
+      }
+      .socialMediaLinks:hover {
+        opacity: 100%;
+        transform: translateY(-0.5rem);
       }
       @media (max-width: 1024px) {
         .navbar {
@@ -185,7 +378,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     "
   >
@@ -202,11 +394,8 @@
         </div>
       </div>
       <div class="layer2">
-        <a class="logo-area" href="#">
-          <img
-            class="logo"
-            src="https://cdn2.iconfinder.com/data/icons/transparent-round-icons/512/home.png"
-          />
+        <a class="logo-area" href="./index.html">
+          <img class="logo" src="./images/logoDummy.png" />
           <h1 class="logoName">Furnohouse</h1>
         </a>
         <div class="searchArea">
@@ -216,14 +405,18 @@
           </a>
         </div>
         <div class="layer2IconGroup">
-          <a href="#">
+          <label class="account">
             <svg class="layer2Icon" viewBox="0 0 24 24">
               <path
                 fill-rule="evenodd"
                 d="M3.07 21c.17-1.35.958-4.98 4.325-6.41.07.06.14.11.22.16.03.03.06.06.1.08.11.09.23.17.35.24.1.06.21.13.32.18.238.15.498.27.758.38.12.05.25.1.38.15.79.28 1.628.43 2.487.43.63 0 1.26-.08 1.858-.24.11-.02.23-.06.34-.1.13-.03.26-.08.39-.13.18-.06.36-.14.53-.22.17-.08.33-.16.488-.26.13-.06.25-.14.37-.22.07-.04.13-.08.19-.12.12-.08.24-.17.35-.26.03-.02.05-.04.08-.06 3.566 1.5 4.235 5.07 4.365 6.4H3.07zM5.735 9.11C5.735 5.74 8.553 3 12.01 3s6.274 2.74 6.274 6.11c0 1.18-.35 2.33-1.02 3.32-.25.38-.53.72-.858 1.03l-.22.19c-1.15 1-2.628 1.56-4.176 1.56-1.558 0-3.047-.56-4.196-1.57-.41-.35-.77-.76-1.07-1.21-.658-.99-1.008-2.14-1.008-3.32zm11.66 4.76c.258-.27.488-.57.698-.88.78-1.16 1.19-2.5 1.19-3.88 0-3.92-3.268-7.11-7.274-7.11-4.017 0-7.274 3.19-7.274 7.11 0 1.38.41 2.72 1.18 3.88.21.31.44.6.688.87-4.365 2.13-4.575 7.39-4.585 7.62L2 22h20v-.5c0-.06-.05-5.42-4.605-7.63z"
               ></path>
             </svg>
-          </a>
+            <div class="headerMenu" style="left: 0">
+              <a class="headerMenuOption" href="./loginpage.html">Log In</a>
+              <a class="headerMenuOption" href="./signuppage.html">Sign Up</a>
+            </div>
+          </label>
           <a href="#">
             <svg class="layer2Icon" viewBox="0 0 20 20">
               <path
@@ -243,31 +436,52 @@
       <div class="layer3">
         <div class="layer3Header">
           <label class="header">Bedroom</label>
-          <div class="headerMenu" style="left: 0"></div>
+          <div class="headerMenu" style="left: 0">
+            <a class="headerMenuOption" href="#">Menu 1</a>
+            <a class="headerMenuOption" href="#">Menu 2</a>
+          </div>
         </div>
         <div class="layer3Header">
           <label class="header">Living</label>
-          <div class="headerMenu" style="left: -2rem"></div>
+          <div class="headerMenu" style="left: 0rem">
+            <a class="headerMenuOption" href="#">Menu 1</a>
+            <a class="headerMenuOption" href="#">Menu 2</a>
+          </div>
         </div>
         <div class="layer3Header">
           <label class="header">Dining</label>
-          <div class="headerMenu" style="left: -3rem"></div>
+          <div class="headerMenu" style="left: 0rem">
+            <a class="headerMenuOption" href="#">Menu 1</a>
+            <a class="headerMenuOption" href="#">Menu 2</a>
+          </div>
         </div>
         <div class="layer3Header">
           <label class="header">Study</label>
-          <div class="headerMenu" style="right: -4rem"></div>
+          <div class="headerMenu" style="right: 0rem">
+            <a class="headerMenuOption" href="#">Menu 1</a>
+            <a class="headerMenuOption" href="#">Menu 2</a>
+          </div>
         </div>
         <div class="layer3Header">
           <label class="header">Kids Room</label>
-          <div class="headerMenu" style="right: -2rem"></div>
+          <div class="headerMenu" style="right: 0rem">
+            <a class="headerMenuOption" href="#">Menu 1</a>
+            <a class="headerMenuOption" href="#">Menu 2</a>
+          </div>
         </div>
         <div class="layer3Header">
           <label class="header">Mattresses</label>
-          <div class="headerMenu" style="right: -1rem"></div>
+          <div class="headerMenu" style="right: 0rem">
+            <a class="headerMenuOption" href="#">Menu 1</a>
+            <a class="headerMenuOption" href="#">Menu 2</a>
+          </div>
         </div>
         <div class="layer3Header">
           <label class="header">Collections</label>
-          <div class="headerMenu" style="right: 0"></div>
+          <div class="headerMenu" style="right: 0">
+            <a class="headerMenuOption" href="#">Menu 1</a>
+            <a class="headerMenuOption" href="#">Menu 2</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -296,6 +510,219 @@
         >
           &gt;
         </button>
+      </div>
+      <div class="bestsellersSection">
+        <label class="bestsellersHeader">Bestsellers</label>
+        <div class="bestsellersItems">
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img
+                class="bestsellerImage"
+                src="./images/BestsellerDummy1.jpg"
+              />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Product</h5>
+              <h5 class="bestsellerPrice">Price</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img
+                class="bestsellerImage"
+                src="./images/BestsellerDummy2.jpg"
+              />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Product</h5>
+              <h5 class="bestsellerPrice">Price</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img
+                class="bestsellerImage"
+                src="./images/BestsellerDummy3.jpg"
+              />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Product</h5>
+              <h5 class="bestsellerPrice">Price</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img
+                class="bestsellerImage"
+                src="./images/BestsellerDummy1.jpg"
+              />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Product</h5>
+              <h5 class="bestsellerPrice">Price</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img
+                class="bestsellerImage"
+                src="./images/BestsellerDummy2.jpg"
+              />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Product</h5>
+              <h5 class="bestsellerPrice">Price</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img
+                class="bestsellerImage"
+                src="./images/BestsellerDummy3.jpg"
+              />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Product</h5>
+              <h5 class="bestsellerPrice">Price</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img
+                class="bestsellerImage"
+                src="./images/BestsellerDummy1.jpg"
+              />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Product</h5>
+              <h5 class="bestsellerPrice">Price</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img
+                class="bestsellerImage"
+                src="./images/BestsellerDummy2.jpg"
+              />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Product</h5>
+              <h5 class="bestsellerPrice">Price</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img
+                class="bestsellerImage"
+                src="./images/BestsellerDummy3.jpg"
+              />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Product</h5>
+              <h5 class="bestsellerPrice">Price</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img
+                class="bestsellerImage"
+                src="./images/BestsellerDummy1.jpg"
+              />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Product</h5>
+              <h5 class="bestsellerPrice">Price</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img
+                class="bestsellerImage"
+                src="./images/BestsellerDummy2.jpg"
+              />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Product</h5>
+              <h5 class="bestsellerPrice">Price</h5>
+            </div>
+          </div>
+          <div class="bestsellersItem">
+            <div class="bestsellerImageDiv">
+              <img
+                class="bestsellerImage"
+                src="./images/BestsellerDummy3.jpg"
+              />
+            </div>
+            <div class="bestsellerInfo">
+              <h5 class="bestsellerProductName">Product</h5>
+              <h5 class="bestsellerPrice">Price</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviewSection">
+        <div class="reviewHeaderSection">
+          <label class="reviewNav">&lt;Prev</label>
+          <label class="reviewHeader">Customer Reviews</label>
+          <label class="reviewNav">Next&gt;</label>
+        </div>
+        <div class="reviewContent">
+          <div class="customerInfo">
+            <img
+              class="customerAvatar"
+              src="./images/customerAvatarDummy.png"
+            />
+            <h3 class="customerName">Customer ABC</h3>
+          </div>
+          <div class="reviewDivider"></div>
+          <div class="review">
+            <p class="reviewText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              debitis et dolore ratione vel cupiditate in sed rem consequuntur
+              sunt unde, nihil atque sapiente iste voluptates perspiciatis.
+              Harum, nisi laboriosam?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="siteLinksSection">
+        <a
+          class="logoName"
+          href="#"
+          style="font-size: 2rem; font-weight: bold; margin-bottom: 2rem"
+        >
+          Furnohouse
+        </a>
+        <ul style="list-style: none">
+          <li><a href="#" class="siteLink">Contact</a></li>
+          <li><a href="#" class="siteLink">About</a></li>
+          <li><a href="#" class="siteLink">FAQs</a></li>
+          <li><a href="#" class="siteLink">Review</a></li>
+        </ul>
+      </div>
+      <div class="socialMediaSection">
+        <a
+          href="#"
+          class="socialMediaLinks"
+          style="background-image: url(./images/facebook.png)"
+        ></a>
+        <a
+          href="#"
+          class="socialMediaLinks"
+          style="background-image: url(./images/youtube.png)"
+        ></a>
+        <a
+          href="#"
+          class="socialMediaLinks"
+          style="background-image: url(./images/instagram.png)"
+        ></a>
+        <a
+          href="#"
+          class="socialMediaLinks"
+          style="background-image: url(./images/twitter.png)"
+        ></a>
       </div>
     </div>
   </body>
