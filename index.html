@@ -117,9 +117,10 @@
     </nav>
     <div class="content">
       <div class="slideshow">
-        <img style="width: 100%" src="./images/slideshowDummy.jpg" />
+        <img style="width: 100%; max-height: 352.5px; object-fit: fill; transition: ease-in-out; transition-duration: 300ms; transition-property: all;" id="slider-image" src="./images/slideshowDummy.jpg" />
         <button
           class="slideshowNav"
+          onclick="prev()"
           style="
             left: 0;
             border-top-right-radius: 1rem;
@@ -131,6 +132,7 @@
         </button>
         <button
           class="slideshowNav"
+          onclick="next()"
           style="
             right: 0;
             border-top-left-radius: 1rem;
@@ -355,5 +357,6 @@
         ></a>
       </div>
     </div>
+    <script src="slides.js" ></script>
   </body>
 </html>
