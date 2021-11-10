@@ -318,9 +318,11 @@ a {
   align-items: center;
 }
 .bestsellerProductName {
+  font-size: 1rem;
   font-weight: 500;
 }
 .bestsellerPrice {
+  font-size: 1rem;
   font-style: oblique;
   font-weight: normal;
   color: gray;
@@ -380,7 +382,7 @@ a {
     width: 100%;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 950px) {
   .bestsellersItems {
     grid-template-columns: 50% 50%;
   }
