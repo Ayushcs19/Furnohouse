@@ -2,6 +2,8 @@
 
 This repository is FullStack project based on furniture selling e-commerce website named 'Furnohouse'. The project is so far being developed on FrontEnd aspects only.
 
+Deployment Link: https://furnohouse.netlify.app
+
 Team Members (Students of GLA University):
 
 1. Ayush Gupta
